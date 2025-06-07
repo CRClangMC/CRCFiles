@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+<title>CRClang_MC数据中心登陆</title>
+<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="content_form">
+      <form action="/login/" method="POST">  
+          {% csrf_token %}       
+          <table width="360"  border="0">
+            <tr>
+              <td colspan="2" align="center" valign="bottom" height="140px">
+               <span id="P_welcome">CRClang_MC数据中心登陆</span>                  
+              </td>
+            </tr>
+            <tr>
+              <td style="width:80px;"><p id="P_label">&nbsp;</p></td>
+              <td style="text-align: left; width:280px; vertical-align: bottom;">    
+                  <span id="P_label">用户名</span>
+               </td>
+            </tr>
+            <tr>
+              <td style="width:80px;">&nbsp;</td>
+              <td style="text-align: left;width:280px;">    
+               <input name="txtuser" type="text" required id="txtuser" class="txt_input">
+               </td>
+            </tr>
+            <tr>
+              <td style="width:80px;">&nbsp;</td>
+              <td style="text-align: left;width:280px; vertical-align: baseline;">    
+                  <span id="P_label">密码</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right;width:80px;">&nbsp;</td>
+              <td style="text-align: left;width:280px;">
+              <input type="password" name="txtpwd" required id="txtpwd"  class="txt_input">
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;width:360px;" colspan="2"> 
+               {% if user %}
+                  <font color="#FF0000">  {{warn}} </font>
+               {% endif %}
+             </td>
+            </tr>
+            <tr>
+              <td style="text-align: right;width:80px;height: 80px;">&nbsp;</td>
+              <td style="text-align: left;width:280px;">
+              <input type="submit" name="btnLogin" id="btnLogin" value="登  录" class="btn_submit">
+              </td>
+            </tr>
+          </table> 
+         
+      </form>
+
+      </div>
+</div>
+</body>
+</html>
