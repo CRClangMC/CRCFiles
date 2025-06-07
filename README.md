@@ -86,13 +86,13 @@ temp/
 
 ## 配置说明
 ### 文件上传配置
-在 [`CRCFiles/settings.py`](CRCFiles_v4.0/CRCFiles/settings.py) 中：
+在 [`CRCFiles/settings.py`](/CRCFiles/settings.py) 中：
 - 临时文件夹：`FILE_UPLOAD_TEMP_DIR`
 - 最大文件大小：`FILE_UPLOAD_MAX_MEMORY_SIZE`
 - 自定义上传处理器：`FILE_UPLOAD_HANDLERS`
 
 ### 静态文件配置
-静态文件存放在 [`static/`](CRCFiles_v4.0/static/) 文件夹中，项目支持通过 `/static/` 路由访问静态资源。
+静态文件存放在 [`static/`](/static/) 文件夹中，项目支持通过 `/static/` 路由访问静态资源。
 
 ## API 路由
 以下是项目的主要 API 路由：
@@ -105,7 +105,7 @@ temp/
 - `/api/batch_download/`：批量下载文件
 
 ## 数据库说明
-项目使用 Microsoft Access 数据库存储文件信息，数据库文件为 [`data.mdb`](CRCFiles_v4.0/data.mdb)。主要表结构如下：
+项目使用 Microsoft Access 数据库存储文件信息，数据库文件为 [`data.mdb`](/data.mdb)。主要表结构如下：
 - `files` 表：存储文件信息，包括文件名、文件路径、文件类型等。
 - `users` 表：存储用户信息，包括用户名和密码。
 
